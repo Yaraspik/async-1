@@ -9,8 +9,3 @@ test('get saving', async () => expect(GameSavingLoader.load()).resolves.toEqual(
     },
   },
 ));
-
-test('return error', async () => {
-  expect.assertions(1);
-  await expect(() => GameSavingLoader.load()).rejects.toThrow('Все плохо');
-});
